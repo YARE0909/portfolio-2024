@@ -22,6 +22,17 @@ const About = () => {
               bikes.
             </h1>
           </div>
+          <div>
+            <a
+              className="border-b-2 border-b-accent hover:text-accent hover:font-bold hover:border-b-white duration-300"
+              href={"/PradyumnaResume.pdf"}
+              download="PradyumnaResume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              My Resume
+            </a>
+          </div>
         </div>
         <div className="w-full flex justify-center gap-10 pt-10">
           <div className="hidden lg:block">
