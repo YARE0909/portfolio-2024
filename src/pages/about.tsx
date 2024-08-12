@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import GithubIcon from "remixicon-react/GithubLineIcon";
@@ -8,6 +9,23 @@ import TwitterIcon from "remixicon-react/TwitterLineIcon";
 const About = () => {
   return (
     <div className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black">
+      <Head>
+        <title>Pradyumna D | About</title>
+        <meta
+          name="description"
+          content="Portfolio of Pradyumna D, a Full Stack Developer"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta property="og:title" content="Pradyumna D" />
+        <meta
+          property="og:description"
+          content="Portfolio of Pradyumna D, a Full Stack Developer"
+        />
+        <meta property="og:url" content="https://pradyumnad.vercel.app" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div className="fixed top-0 w-full">
         <Navbar />
       </div>

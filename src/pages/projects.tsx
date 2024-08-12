@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
@@ -8,6 +9,23 @@ const Projects = () => {
   const router = useRouter();
   return (
     <div className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black">
+      <Head>
+        <title>Pradyumna D | Projects</title>
+        <meta
+          name="description"
+          content="Portfolio of Pradyumna D, a Full Stack Developer"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta property="og:title" content="Pradyumna D" />
+        <meta
+          property="og:description"
+          content="Portfolio of Pradyumna D, a Full Stack Developer"
+        />
+        <meta property="og:url" content="https://pradyumnad.vercel.app" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div className="fixed top-0 w-full z-[999]">
         <Navbar />
       </div>
@@ -118,7 +136,8 @@ const Projects = () => {
               </div>
               <div>
                 <h1 className="text-center">
-                  A webapp that verifies users on signing up to prevent duplicate accounts.
+                  A webapp that verifies users on signing up to prevent
+                  duplicate accounts.
                 </h1>
               </div>
             </div>
@@ -143,9 +162,7 @@ const Projects = () => {
                 <h1 className="font-bold text-4xl">ArtHouse 814 Website</h1>
               </div>
               <div>
-                <h1 className="text-center">
-                  Website for ArtHouse 814
-                </h1>
+                <h1 className="text-center">Website for ArtHouse 814</h1>
               </div>
             </div>
           </Tilt>

@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 
@@ -24,6 +25,23 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Pradyumna D</title>
+        <meta
+          name="description"
+          content="Portfolio of Pradyumna D, a Full Stack Developer"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta property="og:title" content="Pradyumna D" />
+        <meta
+          property="og:description"
+          content="Portfolio of Pradyumna D, a Full Stack Developer"
+        />
+        <meta property="og:url" content="https://pradyumnad.vercel.app" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div id="home" className="w-full min-h-screen h-fit flex flex-col">
         <div className="fixed top-0 w-full">
           <Navbar />
