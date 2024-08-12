@@ -11,7 +11,7 @@ const About = () => {
       <div className="fixed top-0 w-full">
         <Navbar />
       </div>
-      <section className="flex flex-col min-h-screen h-fit p-4">
+      <section className="flex flex-col h-fit p-4">
         <div className="flex flex-col items-center gap-5">
           <div className="w-full h-full flex-1 flex pt-20 flex-col items-center justify-start">
             <h1 className="text-white font-bold text-6xl lg:text-8xl">
@@ -26,7 +26,7 @@ const About = () => {
             </h1>
           </div> */}
           <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-5 bg-transparent text-white shadow-xl rounded-lg border border-gray-700 p-4">
-            <div className="rounded-t-lg h-32 overflow-hidden">
+            <div className="rounded-lg h-32 overflow-hidden">
               <Image
                 className="object-cover object-top w-full"
                 src="/bg.jpeg"
@@ -35,11 +35,11 @@ const About = () => {
                 height={1000}
               />
             </div>
-            <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+            <div className="mx-auto w-32 h-32 -mt-16 rounded-full overflow-hidden">
               <Image
                 className="object-cover object-center h-32"
                 src="/Pradyumna1.jpeg"
-                alt="Woman looking front"
+                alt="Pradyumna D"
                 width={128}
                 height={128}
               />
@@ -89,7 +89,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen h-fit">
+      <section className="w-full h-fit">
         <div className="w-full h-full flex-1 flex pt-20 flex-col items-center justify-start">
           <h1 className="text-white font-bold text-6xl lg:text-8xl">
             specifics
@@ -97,7 +97,9 @@ const About = () => {
           <div className="w-full flex flex-col lg:flex lg:flex-row justify-between gap-10 p-4 lg:p-20">
             <div className="flex flex-col items-start lg:items-center max-w-screen-sm w-full pt-5 lg:pt-0">
               <div>
-                <h1 className="text-white font-bold text-4xl border-b">education</h1>
+                <h1 className="text-white font-bold text-4xl border-b">
+                  education
+                </h1>
               </div>
               <div className="flex flex-col gap-5 pt-10">
                 <div className="p-2 border-b border-b-gray-700">
@@ -159,7 +161,9 @@ const About = () => {
             </div>
             <div className="flex flex-col items-start lg:items-center max-w-screen-sm w-full">
               <div>
-                <h1 className="text-white font-bold text-4xl border-b">experience</h1>
+                <h1 className="text-white font-bold text-4xl border-b">
+                  experience
+                </h1>
               </div>
               <div className="flex flex-col gap-5 pt-10">
                 <div className="p-2 border-b border-b-gray-700">
@@ -184,9 +188,9 @@ const About = () => {
                   <h1 className="text-sm">SRMKZILLA - Chennai</h1>
                   <h1 className="font-bold">May. 2023 - May. 2024</h1>
                   <h1 className="font-bold text-xl mt-2">
-                    Served as a Associate Technical Lead for
-                    SRMKZILLA, Mozilla student community, leading workshops and
-                    events on technical skills for students.
+                    Served as a Associate Technical Lead for SRMKZILLA, Mozilla
+                    student community, leading workshops and events on technical
+                    skills for students.
                   </h1>
                   <h1 className="font-bold text-xl mt-2">
                     Organizing seminars and events to promote learning and
