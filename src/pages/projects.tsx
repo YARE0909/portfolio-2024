@@ -15,7 +15,7 @@ const Projects = () => {
         <div>
           <h1 className="text-8xl text-white font-bold">my projects</h1>
         </div>
-        <div className="w-full flex flex-col lg:flex lg:flex-row justify-center gap-20">
+        <div className="w-full flex flex-col lg:flex lg:flex-row lg:flex-wrap justify-center gap-20">
           <Tilt className="cursor-pointer">
             <div
               className="bg-purple-950 rounded-2xl p-4 flex flex-col gap-5 items-center"
@@ -119,6 +119,32 @@ const Projects = () => {
               <div>
                 <h1 className="text-center">
                   A webapp that verifies users on signing up to prevent duplicate accounts.
+                </h1>
+              </div>
+            </div>
+          </Tilt>
+          <Tilt className="cursor-pointer">
+            <div
+              className="bg-purple-950 rounded-2xl p-4 flex flex-col gap-5 items-center"
+              onClick={() => {
+                router.push("https://arthouse814.org");
+              }}
+            >
+              <div>
+                <Image
+                  className="rounded-lg"
+                  src="/project5.png"
+                  alt=""
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <div>
+                <h1 className="font-bold text-4xl">ArtHouse 814 Website</h1>
+              </div>
+              <div>
+                <h1 className="text-center">
+                  Website for ArtHouse 814
                 </h1>
               </div>
             </div>

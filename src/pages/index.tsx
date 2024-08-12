@@ -1,9 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { shadesOfPurple } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import Image from "next/image";
 
 const TEXTS = [
   "Student",
@@ -11,12 +8,13 @@ const TEXTS = [
   "UI/UX Developer",
   "Programmer",
   "Web Developer",
+  "App Developer",
   "Automobile Enthusiast",
 ];
 
 export default function Home() {
   const [index, setIndex] = useState(0);
-  const about = useEffect(() => {
+  useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
       3000 // every 3 seconds

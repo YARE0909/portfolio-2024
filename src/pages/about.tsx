@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
+import GithubIcon from "remixicon-react/GithubLineIcon";
+import LinkedInIcon from "remixicon-react/LinkedinBoxLineIcon";
+import TwitterIcon from "remixicon-react/TwitterLineIcon";
 
 const About = () => {
   return (
@@ -15,55 +18,95 @@ const About = () => {
               about me
             </h1>
           </div>
-          <div className="max-w-6xl w-full">
+          {/* <div className="max-w-6xl w-full">
             <h1 className="text-gray-400 text-center text-xl">
               A sophomore CSE undergrad at SRMIST who does a little bit of
               everything and a lot of Web Development. Oh and I love cars and
               bikes.
             </h1>
-          </div>
-          <div>
-            <a
-              className="border-b-2 border-b-accent hover:text-accent hover:font-bold hover:border-b-white duration-300"
-              href={"/PradyumnaResume.pdf"}
-              download="PradyumnaResume.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              My Resume
-            </a>
-          </div>
-        </div>
-        <div className="w-full flex justify-center gap-10 pt-10">
-          <div className="hidden lg:block">
-            <Image src="/Pradyumna2.jpeg" alt="" width={400} height={500} />
-          </div>
-          <div>
-            <Image src="/Pradyumna1.jpeg" alt="" width={400} height={500} />
-          </div>
-          <div className="hidden lg:block">
-            <Image src="/Pradyumna3.jpeg" alt="" width={400} height={500} />
+          </div> */}
+          <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-5 bg-transparent text-white shadow-xl rounded-lg border border-gray-700 p-4">
+            <div className="rounded-t-lg h-32 overflow-hidden">
+              <Image
+                className="object-cover object-top w-full"
+                src="/bg.jpeg"
+                alt="Mountain"
+                width={1000}
+                height={1000}
+              />
+            </div>
+            <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+              <Image
+                className="object-cover object-center h-32"
+                src="/Pradyumna1.jpeg"
+                alt="Woman looking front"
+                width={128}
+                height={128}
+              />
+            </div>
+            <div className="text-center mt-2">
+              <h2 className="font-semibold">Pradyumna D</h2>
+              <p className="text-gray-500">
+                A sophomore CSE undergrad at SRMIST who does a little bit of
+                everything and a lot of Web Development. Oh and I love cars and
+                bikes.
+              </p>
+            </div>
+            <ul className="py-4 mt-2 text-gray-700 flex items-center justify-around">
+              <a
+                className="rounded-full hover:bg-gray-700 duration-300 p-2"
+                href="https://github.com/YARE0909"
+                target="_blank"
+              >
+                <GithubIcon color="white" />
+              </a>
+              <a
+                className="rounded-full hover:bg-gray-700 duration-300 p-2"
+                href="https://www.linkedin.com/in/pradyumna-d-95a88123b/"
+                target="_blank"
+              >
+                <LinkedInIcon color="white" />
+              </a>
+              <a
+                className="rounded-full hover:bg-gray-700 duration-300 p-2"
+                href="https://x.com/PradyumnaD7"
+                target="_blank"
+              >
+                <TwitterIcon color="white" />
+              </a>
+            </ul>
+            <div className="p-4 border-t border-t-gray-700 mt-2 w-full flex justify-center items-center">
+              <a
+                className="border-b-2 border-b-accent hover:text-accent hover:font-bold hover:border-b-white duration-300"
+                href={"/PradyumnaResume.pdf"}
+                download="PradyumnaResume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                My Resume
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <section className="min-h-screen h-fit">
         <div className="w-full h-full flex-1 flex pt-20 flex-col items-center justify-start">
           <h1 className="text-white font-bold text-6xl lg:text-8xl">
-            experience
+            specifics
           </h1>
           <div className="w-full flex flex-col lg:flex lg:flex-row justify-between gap-10 p-4 lg:p-20">
             <div className="flex flex-col items-start lg:items-center max-w-screen-sm w-full pt-5 lg:pt-0">
               <div>
-                <h1 className="text-white font-bold text-4xl">education</h1>
+                <h1 className="text-white font-bold text-4xl border-b">education</h1>
               </div>
               <div className="flex flex-col gap-5 pt-10">
-                <div className="p-2 rounded-lg">
+                <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">2015-2020</h1>
                   <h1 className="text-white font-bold text-2xl">J.G.R.V.K</h1>
                   <h1>Bangalore, India</h1>
                   <h1 className="font-bold text-xl">High School Diploma</h1>
                 </div>
-                <div className="p-2 rounded-lg">
+                <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">2020-2022</h1>
                   <h1 className="text-white font-bold text-2xl">
                     Deeksha Learning
@@ -71,74 +114,77 @@ const About = () => {
                   <h1>Bangalore, India</h1>
                   <h1 className="font-bold text-xl">PUC 1 & PUC 2</h1>
                 </div>
-                <div className="p-2 rounded-lg">
+                <div className="p-2">
                   <h1 className="text-gray-400 font-bold">2022-2026</h1>
                   <h1 className="text-white font-bold text-2xl">
                     SRM Institute of Science and Technology (SRMIST)
                   </h1>
                   <h1>Chennai, India</h1>
                   <h1 className="font-bold text-xl">
-                    Bachelor of Technology in Computer Science with
-                    specialisation in Big Data Analysis
+                    Bachelor of Technology in Computer Science Engineering with
+                    Specialization in Data Science
                   </h1>
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-start lg:items-center max-w-screen-sm w-full">
               <div>
-                <h1 className="text-white font-bold text-4xl">
+                <h1 className="text-white font-bold text-4xl border-b">
                   technical skills
                 </h1>
               </div>
               <div className="flex flex-col gap-5 pt-10">
-                <div>
+                <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">Programming</h1>
                   <h1 className="text-white font-bold text-2xl">
-                    Python,C/C++, Java, Javascript, Typescript, SQL, Postgres,
+                    Python, C/C++, Java, Javascript, Typescript, SQL, Postgres,
                     Redis, MongoDB
                   </h1>
                 </div>
-                <div>
+                <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">Frameworks</h1>
                   <h1 className="text-white font-bold text-2xl">
                     React Js, Next Js, Angular, Express, FastAPI, HTML, CSS,
-                    SASS, Tailwind CSS
+                    SASS, Tailwind CSS, React Native
                   </h1>
                 </div>
                 <div>
                   <h1 className="text-gray-400 font-bold">Tools</h1>
                   <h1 className="text-white font-bold text-2xl">
-                    Visual Studio Code, MongoDB Compass, Postman, Git, Github
+                    Visual Studio Code, MongoDB Compass, Postman, Git, Github,
+                    Visual Studio, PyCharm, IntelliJ IDEA, Android Studio
                   </h1>
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-start lg:items-center max-w-screen-sm w-full">
               <div>
-                <h1 className="text-white font-bold text-4xl">experience</h1>
+                <h1 className="text-white font-bold text-4xl border-b">experience</h1>
               </div>
               <div className="flex flex-col gap-5 pt-10">
-                <div>
+                <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">
                     Front End Web Developer
                   </h1>
                   <h1 className="text-white font-bold text-2xl">Intern</h1>
-                  <h1 className="text-sm">Dudes - Bangalore</h1>
+                  <h1 className="text-sm">
+                    CleNet Tech Private Limited - Bangalore
+                  </h1>
                   <h1 className="font-bold">Oct. 2023 - Present</h1>
                   <h1 className="font-bold text-xl mt-2">
                     Building UIs for the company&rsquo;s website and services
                     provided by the company for users and company employees.
                   </h1>
                 </div>
-                <div>
+                <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">Technical</h1>
                   <h1 className="text-white font-bold text-2xl">
                     Associate Lead
                   </h1>
                   <h1 className="text-sm">SRMKZILLA - Chennai</h1>
-                  <h1 className="font-bold">May. 2023 - Present</h1>
+                  <h1 className="font-bold">May. 2023 - May. 2024</h1>
                   <h1 className="font-bold text-xl mt-2">
-                    Currently serving as a Associate Technical Lead for
+                    Served as a Associate Technical Lead for
                     SRMKZILLA, Mozilla student community, leading workshops and
                     events on technical skills for students.
                   </h1>
