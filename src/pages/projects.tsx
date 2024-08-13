@@ -15,7 +15,7 @@ const Projects = () => {
           name="description"
           content="Portfolio of Pradyumna D, a Full Stack Developer"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/ogIcon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta property="og:title" content="Pradyumna D" />

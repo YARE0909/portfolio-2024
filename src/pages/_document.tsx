@@ -20,7 +20,7 @@ export default function Document() {
           content="Portfolio of Pradyumna D, a Full Stack Developer"
         />
         {/* Add favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/ogIcon.ico" />
         {/* Add meta viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Add meta theme-color */}
