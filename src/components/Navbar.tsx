@@ -6,7 +6,7 @@ import MenuIcon from "remixicon-react/MenuLineIcon"
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   return (
-    <div className="w-full h-20 p-6 flex justify-between bg-primary">
+    <div className="w-full h-20 p-6 flex justify-between bg-transparent">
       <div>
         <h1 className="font-bold text-4xl">
           <span className="text-3xl text-accent font-medium">&lt;</span>
