@@ -4,11 +4,23 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
+
+// Define animation variants
+const navbarVariant = {
+  initial: { y: -50, opacity: 0 },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
+const contentVariant = {
+  initial: { y: 50, opacity: 0 },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 const Projects = () => {
   const router = useRouter();
   return (
-    <div className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black">
+    <motion.div className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black" initial="initial" animate="animate">
       <Head>
         <title>Pradyumna D | Projects</title>
         <meta
@@ -26,10 +38,10 @@ const Projects = () => {
         <meta property="og:url" content="https://pradyumnad.vercel.app" />
         <meta property="og:type" content="website" />
       </Head>
-      <div className="fixed top-0 w-full z-[999]">
-        <Navbar />
-      </div>
-      <div className="flex flex-col gap-20 items-center pt-20 p-4">
+      <motion.div className="fixed top-0 w-full z-50" variants={navbarVariant}>
+          <Navbar />
+        </motion.div>
+      <motion.div className="flex flex-col gap-20 items-center pt-20 p-4" variants={contentVariant}>
         <div>
           <h1 className="text-8xl text-white font-bold">my projects</h1>
         </div>
@@ -167,8 +179,8 @@ const Projects = () => {
             </div>
           </Tilt>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

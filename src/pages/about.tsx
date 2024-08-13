@@ -5,10 +5,23 @@ import React from "react";
 import GithubIcon from "remixicon-react/GithubLineIcon";
 import LinkedInIcon from "remixicon-react/LinkedinBoxLineIcon";
 import TwitterIcon from "remixicon-react/TwitterLineIcon";
+import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
+
+// Define animation variants
+const navbarVariant = {
+  initial: { y: -50, opacity: 0 },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
+const contentVariant = {
+  initial: { y: 50, opacity: 0 },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 const About = () => {
   return (
-    <div className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black">
+    <motion.div className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black" initial="initial" animate="animate">
       <Head>
         <title>Pradyumna D | About</title>
         <meta
@@ -26,24 +39,17 @@ const About = () => {
         <meta property="og:url" content="https://pradyumnad.vercel.app" />
         <meta property="og:type" content="website" />
       </Head>
-      <div className="fixed top-0 w-full">
-        <Navbar />
-      </div>
-      <section className="flex flex-col h-fit p-4">
+      <motion.div className="fixed top-0 w-full z-50" variants={navbarVariant}>
+          <Navbar />
+        </motion.div>
+      <motion.section className="flex flex-col h-fit p-4" variants={contentVariant}>
         <div className="flex flex-col items-center gap-5">
           <div className="w-full h-full flex-1 flex pt-20 flex-col items-center justify-start">
             <h1 className="text-white font-bold text-6xl lg:text-8xl">
               about me
             </h1>
           </div>
-          {/* <div className="max-w-6xl w-full">
-            <h1 className="text-gray-400 text-center text-xl">
-              A sophomore CSE undergrad at SRMIST who does a little bit of
-              everything and a lot of Web Development. Oh and I love cars and
-              bikes.
-            </h1>
-          </div> */}
-          <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-5 bg-transparent text-white shadow-xl rounded-lg border border-gray-700 p-4">
+          <Tilt className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-5 bg-transparent text-white shadow-xl rounded-lg border border-gray-700 p-4">
             <div className="rounded-lg h-32 overflow-hidden">
               <Image
                 className="object-cover object-top w-full"
@@ -104,9 +110,9 @@ const About = () => {
                 My Resume
               </a>
             </div>
-          </div>
+          </Tilt>
         </div>
-      </section>
+      </motion.section>
       <section className="w-full h-fit">
         <div className="w-full h-full flex-1 flex pt-20 flex-col items-center justify-start">
           <h1 className="text-white font-bold text-6xl lg:text-8xl">
@@ -230,7 +236,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

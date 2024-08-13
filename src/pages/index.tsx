@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
+import { motion } from "framer-motion";
 
 const TEXTS = [
   "Student",
@@ -12,6 +13,17 @@ const TEXTS = [
   "App Developer",
   "Automobile Enthusiast",
 ];
+
+// Define animation variants
+const navbarVariant = {
+  initial: { y: -50, opacity: 0 },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
+const contentVariant = {
+  initial: { y: 50, opacity: 0 },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -24,7 +36,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <motion.div initial="initial" animate="animate">
       <Head>
         <title>Pradyumna D</title>
         <meta
@@ -43,14 +55,15 @@ export default function Home() {
         <meta property="og:type" content="website" />
       </Head>
       <div id="home" className="w-full min-h-screen h-fit flex flex-col">
-        <div className="fixed top-0 w-full">
+        <motion.div className="fixed top-0 w-full z-50" variants={navbarVariant}>
           <Navbar />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           style={{
             backgroundImage: "url('./portFolioBg.webp')",
           }}
           className="flex-1 p-6 flex items-center justify-start lg:pl-64 bg-cover bg-no-repeat"
+          variants={contentVariant}
         >
           <div>
             <div>
@@ -70,8 +83,8 @@ export default function Home() {
               </TextTransition>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
