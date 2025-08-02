@@ -10,8 +10,9 @@ const TEXTS = [
   "UI/UX Developer",
   "Programmer",
   "Web Developer",
-  "App Developer",
   "Automobile Enthusiast",
+  "Motorhead",
+  "AI/ML Enthusiast"
 ];
 
 // Define animation variants

@@ -20,7 +20,11 @@ const contentVariant = {
 const Projects = () => {
   const router = useRouter();
   return (
-    <motion.div className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black" initial="initial" animate="animate">
+    <motion.div
+      className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black"
+      initial="initial"
+      animate="animate"
+    >
       <Head>
         <title>Pradyumna D | Projects</title>
         <meta
@@ -39,9 +43,12 @@ const Projects = () => {
         <meta property="og:type" content="website" />
       </Head>
       <motion.div className="fixed top-0 w-full z-50" variants={navbarVariant}>
-          <Navbar />
-        </motion.div>
-      <motion.div className="flex flex-col gap-20 items-center pt-20 p-4" variants={contentVariant}>
+        <Navbar />
+      </motion.div>
+      <motion.div
+        className="flex flex-col gap-20 items-center pt-20 p-4"
+        variants={contentVariant}
+      >
         <div>
           <h1 className="text-8xl text-white font-bold">my projects</h1>
         </div>
@@ -104,7 +111,7 @@ const Projects = () => {
             <div
               className="bg-purple-950 rounded-2xl p-4 flex flex-col gap-5 items-center"
               onClick={() => {
-                router.push("https://infostash-web.vercel.app/");
+                router.push("https://globetrotter-nine.vercel.app/");
               }}
             >
               <div>
@@ -117,64 +124,13 @@ const Projects = () => {
                 />
               </div>
               <div>
-                <h1 className="font-bold text-4xl">Infostash</h1>
+                <h1 className="font-bold text-4xl">Globtrotter</h1>
               </div>
               <div>
                 <h1 className="text-center">
-                  UI for a platform that offers certified courses on various
-                  topics.
+                  A fun game where players guess world cities from cryptic
+                  clues.
                 </h1>
-              </div>
-            </div>
-          </Tilt>
-          <Tilt className="cursor-pointer">
-            <div
-              className="bg-purple-950 rounded-2xl p-4 flex flex-col gap-5 items-center"
-              onClick={() => {
-                router.push("https://capx-facial-recognition.vercel.app/");
-              }}
-            >
-              <div>
-                <Image
-                  className="rounded-lg"
-                  src="/project2.png"
-                  alt=""
-                  width={500}
-                  height={500}
-                />
-              </div>
-              <div>
-                <h1 className="font-bold text-4xl">Facial Recognition App</h1>
-              </div>
-              <div>
-                <h1 className="text-center">
-                  A webapp that verifies users on signing up to prevent
-                  duplicate accounts.
-                </h1>
-              </div>
-            </div>
-          </Tilt>
-          <Tilt className="cursor-pointer">
-            <div
-              className="bg-purple-950 rounded-2xl p-4 flex flex-col gap-5 items-center"
-              onClick={() => {
-                router.push("https://arthouse814.org");
-              }}
-            >
-              <div>
-                <Image
-                  className="rounded-lg"
-                  src="/project5.png"
-                  alt=""
-                  width={500}
-                  height={500}
-                />
-              </div>
-              <div>
-                <h1 className="font-bold text-4xl">ArtHouse 814 Website</h1>
-              </div>
-              <div>
-                <h1 className="text-center">Website for ArtHouse 814</h1>
               </div>
             </div>
           </Tilt>

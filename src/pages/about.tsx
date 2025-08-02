@@ -71,7 +71,7 @@ const About = () => {
             <div className="text-center mt-2">
               <h2 className="font-semibold">Pradyumna D</h2>
               <p className="text-gray-500">
-                A sophomore CSE undergrad at SRMIST who does a little bit of
+                A senior CSE undergrad at SRMIST who does a little bit of
                 everything and a lot of Web Development. Oh and I love cars and
                 bikes.
               </p>
@@ -198,7 +198,7 @@ const About = () => {
                   <h1 className="text-sm">
                     CleNet Tech Private Limited - Bangalore
                   </h1>
-                  <h1 className="font-bold">Oct. 2023 - Present</h1>
+                  <h1 className="font-bold">Nov. 2023 - Nov. 2024</h1>
                   <h1 className="font-bold text-xl mt-2">
                     Building UIs for the company&rsquo;s website and services
                     provided by the company for users and company employees.
