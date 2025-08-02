@@ -21,7 +21,11 @@ const contentVariant = {
 
 const About = () => {
   return (
-    <motion.div className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black" initial="initial" animate="animate">
+    <motion.div
+      className="w-full min-h-screen h-fit bg-gradient-to-b from-[#14121C] to-black"
+      initial="initial"
+      animate="animate"
+    >
       <Head>
         <title>Pradyumna D | About</title>
         <meta
@@ -40,9 +44,12 @@ const About = () => {
         <meta property="og:type" content="website" />
       </Head>
       <motion.div className="fixed top-0 w-full z-50" variants={navbarVariant}>
-          <Navbar />
-        </motion.div>
-      <motion.section className="flex flex-col h-fit p-4" variants={contentVariant}>
+        <Navbar />
+      </motion.div>
+      <motion.section
+        className="flex flex-col h-fit p-4"
+        variants={contentVariant}
+      >
         <div className="flex flex-col items-center gap-5">
           <div className="w-full h-full flex-1 flex pt-20 flex-col items-center justify-start">
             <h1 className="text-white font-bold text-6xl lg:text-8xl">
@@ -91,13 +98,6 @@ const About = () => {
               >
                 <LinkedInIcon color="white" />
               </a>
-              <a
-                className="rounded-full hover:bg-gray-700 duration-300 p-2"
-                href="https://x.com/PradyumnaD7"
-                target="_blank"
-              >
-                <TwitterIcon color="white" />
-              </a>
             </ul>
             <div className="p-4 border-t border-t-gray-700 mt-2 w-full flex justify-center items-center">
               <a
@@ -125,7 +125,7 @@ const About = () => {
                   education
                 </h1>
               </div>
-              <div className="flex flex-col gap-5 pt-10">
+              <div className="flex flex-col-reverse gap-5 pt-10">
                 <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">2015-2020</h1>
                   <h1 className="text-white font-bold text-2xl">J.G.R.V.K</h1>
@@ -163,22 +163,22 @@ const About = () => {
                 <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">Programming</h1>
                   <h1 className="text-white font-bold text-2xl">
-                    Python, C/C++, Java, Javascript, Typescript, SQL, Postgres,
-                    Redis, MongoDB
+                    Python, C/C++, Javascript, Typescript, SQL, Postgres, Redis,
+                    MongoDB
                   </h1>
                 </div>
                 <div className="p-2 border-b border-b-gray-700">
                   <h1 className="text-gray-400 font-bold">Frameworks</h1>
                   <h1 className="text-white font-bold text-2xl">
                     React Js, Next Js, Angular, Express, FastAPI, HTML, CSS,
-                    SASS, Tailwind CSS, React Native
+                    Tailwind CSS, ASP .NET
                   </h1>
                 </div>
                 <div>
                   <h1 className="text-gray-400 font-bold">Tools</h1>
                   <h1 className="text-white font-bold text-2xl">
                     Visual Studio Code, MongoDB Compass, Postman, Git, Github,
-                    Visual Studio, PyCharm, IntelliJ IDEA, Android Studio
+                    Visual Studio, Linux
                   </h1>
                 </div>
               </div>
@@ -205,6 +205,18 @@ const About = () => {
                   </h1>
                 </div>
                 <div className="p-2 border-b border-b-gray-700">
+                  <h1 className="text-gray-400 font-bold">Full Stack Intern</h1>
+                  <h1 className="text-white font-bold text-2xl">Intern</h1>
+                  <h1 className="text-sm">
+                    ThoughtPro Technologies - Bangalore
+                  </h1>
+                  <h1 className="font-bold">Dec. 2024 - Present</h1>
+                  <h1 className="font-bold text-xl mt-2">
+                    Innovating and contributing towards various projects that
+                    help clients with their requirements
+                  </h1>
+                </div>
+                <div className="p-2">
                   <h1 className="text-gray-400 font-bold">Technical</h1>
                   <h1 className="text-white font-bold text-2xl">
                     Associate Lead
@@ -219,16 +231,6 @@ const About = () => {
                   <h1 className="font-bold text-xl mt-2">
                     Organizing seminars and events to promote learning and
                     engagement with computer science tools and related topics.
-                  </h1>
-                </div>
-                <div>
-                  <h1 className="text-gray-400 font-bold">Technical</h1>
-                  <h1 className="text-white font-bold text-2xl">Member</h1>
-                  <h1 className="text-sm">SRMKZILLA - Chennai</h1>
-                  <h1 className="font-bold">Sep. 2022 - Apr. 2023</h1>
-                  <h1 className="font-bold text-xl mt-2">
-                    Helped organizing and publicizing the events of the club in
-                    the college and conducted publicity tasks.
                   </h1>
                 </div>
               </div>

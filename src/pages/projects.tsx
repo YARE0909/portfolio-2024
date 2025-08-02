@@ -84,7 +84,7 @@ const Projects = () => {
             <div
               className="bg-purple-950 rounded-2xl p-4 flex flex-col gap-5 items-center"
               onClick={() => {
-                router.push("https://kzilla-internal-hackathon.vercel.app/");
+                router.push("https://github.com/YARE0909/code2doc");
               }}
             >
               <div>
@@ -97,12 +97,11 @@ const Projects = () => {
                 />
               </div>
               <div>
-                <h1 className="font-bold text-4xl">Y</h1>
+                <h1 className="font-bold text-4xl">Code2Doc</h1>
               </div>
               <div>
                 <h1 className="text-center">
-                  A clone of the popular social media app,
-                  <br /> X(Twitter)
+                  A fine tuned pre-trained T5 model that can document code snippets
                 </h1>
               </div>
             </div>
